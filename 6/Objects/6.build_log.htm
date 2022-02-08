@@ -1,0 +1,161 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: . ., ., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Microcontrollers\6\6.uvprojx
+Project File Date:  12/16/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling system_stm32f0xx.c...
+assembling startup_stm32f072xb.s...
+main.c(2): warning: In file included from...
+./adc.h(3): warning: no previous extern declaration for non-static variable 'DMA_buf_size' [-Wmissing-variable-declarations]
+const uint32_t DMA_buf_size = 10;
+               ^
+./adc.h(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint32_t DMA_buf_size = 10;
+      ^
+./adc.h(4): warning: variable length array used [-Wvla]
+uint16_t DMA_buf[DMA_buf_size];
+                 ^~~~~~~~~~~~
+./adc.h(4): warning: variable length array folded to constant array as an extension [-Wgnu-folding-constant]
+uint16_t DMA_buf[DMA_buf_size];
+         ^
+./adc.h(5): warning: no previous extern declaration for non-static variable 'DMA_flag' [-Wmissing-variable-declarations]
+uint8_t DMA_flag = 0;
+        ^
+./adc.h(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t DMA_flag = 0;
+^
+main.c(5): warning: no previous extern declaration for non-static variable 'update_time' [-Wmissing-variable-declarations]
+const uint8_t update_time = 10; // in millisecs
+              ^
+main.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint8_t update_time = 10; // in millisecs
+      ^
+main.c(6): warning: no previous extern declaration for non-static variable 'scanTime' [-Wmissing-variable-declarations]
+const uint16_t scanTime = 100; //in millisecs time of scan
+               ^
+main.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint16_t scanTime = 100; //in millisecs time of scan
+      ^
+main.c(8): warning: no previous extern declaration for non-static variable 'sweep_flag' [-Wmissing-variable-declarations]
+uint8_t sweep_flag = 0;
+        ^
+main.c(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t sweep_flag = 0;
+^
+main.c(9): warning: no previous extern declaration for non-static variable 'sweep_interrupt_count' [-Wmissing-variable-declarations]
+uint32_t sweep_interrupt_count = 0;
+         ^
+main.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t sweep_interrupt_count = 0;
+^
+main.c(11): warning: no previous extern declaration for non-static variable 'max_voltage' [-Wmissing-variable-declarations]
+uint32_t max_voltage = 1024;
+         ^
+main.c(11): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t max_voltage = 1024;
+^
+main.c(12): warning: no previous extern declaration for non-static variable 'cur_voltage' [-Wmissing-variable-declarations]
+uint32_t cur_voltage = 0;
+         ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t cur_voltage = 0;
+^
+main.c(14): warning: no previous extern declaration for non-static variable 'prev_col' [-Wmissing-variable-declarations]
+uint32_t prev_col = 4;
+         ^
+main.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t prev_col = 4;
+^
+main.c(16): warning: no previous extern declaration for non-static variable 'first_part' [-Wmissing-variable-declarations]
+const uint8_t first_part = 0;
+              ^
+main.c(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint8_t first_part = 0;
+      ^
+main.c(17): warning: no previous extern declaration for non-static variable 'second_part' [-Wmissing-variable-declarations]
+const uint8_t second_part = 1;
+              ^
+main.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint8_t second_part = 1;
+      ^
+main.c(18): warning: no previous extern declaration for non-static variable 'part_for_analysis' [-Wmissing-variable-declarations]
+uint8_t part_for_analysis = first_part;
+        ^
+main.c(18): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t part_for_analysis = first_part;
+^
+main.c(2): warning: In file included from...
+./adc.h(4): warning: no previous extern declaration for non-static variable 'DMA_buf' [-Wmissing-variable-declarations]
+uint16_t DMA_buf[DMA_buf_size];
+         ^
+./adc.h(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint16_t DMA_buf[DMA_buf_size];
+^
+main.c(13): warning: no previous extern declaration for non-static variable 'voltage_arr' [-Wmissing-variable-declarations]
+uint32_t voltage_arr[8];
+         ^
+main.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t voltage_arr[8];
+^
+16 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=2352 RO-data=240 RW-data=12 ZI-data=1704  
+".\Objects\6.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\kater\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\kater\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Source file:   Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\arm\startup_stm32f072xb.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F0xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
