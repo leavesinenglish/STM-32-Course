@@ -1,0 +1,135 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: . ., ., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\ProjectsKeil\Game\game.uvprojx
+Project File Date:  12/29/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling system_stm32f0xx.c...
+assembling startup_stm32f072xb.s...
+main.c(3): warning: In file included from...
+./usart_connection.h(2): warning: In file included from...
+./ping_pong_game.h(2): warning: In file included from...
+./buttons.h(16): warning: padding struct 'key_state' with 1 byte to align 'last_change_time' [-Wpadded]
+        uint32_t last_change_time;
+                 ^
+main.c(3): warning: In file included from...
+./usart_connection.h(2): warning: In file included from...
+./ping_pong_game.h(4): warning: In file included from...
+./usart.h(2): warning: In file included from...
+./SPI.h(51): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        SPI2->DR |= result;
+                 ~~ ^~~~~~
+./SPI.h(65): warning: cast from 'volatile Matrix *' to 'void *' drops volatile qualifier [-Wcast-qual]
+        memset((void*)front_buffer, 0, sizeof(Matrix));
+                      ^
+main.c(3): warning: In file included from...
+./usart_connection.h(2): warning: In file included from...
+./ping_pong_game.h(78): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                        (round(ball.y)<=platform_up.y+platform_up.width/2 && round(ball.y)>=platform_up.y-platform_up.width/2 && ball.x>7)){
+                                                                             ~~~~~ ~~~~~^
+./ping_pong_game.h(78): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                        (round(ball.y)<=platform_up.y+platform_up.width/2 && round(ball.y)>=platform_up.y-platform_up.width/2 && ball.x>7)){
+                         ~~~~~ ~~~~~^
+./ping_pong_game.h(77): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                if ((round(ball.y)<=platform_down.y+platform_down.width/2 && round(ball.y)>=platform_down.y-platform_down.width/2 && ball.x<0) ||
+                                                                             ~~~~~ ~~~~~^
+./ping_pong_game.h(77): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                if ((round(ball.y)<=platform_down.y+platform_down.width/2 && round(ball.y)>=platform_down.y-platform_down.width/2 && ball.x<0) ||
+                     ~~~~~ ~~~~~^
+./ping_pong_game.h(166): warning: cast from function call of type 'double' to non-matching type 'int' [-Wbad-function-cast]
+                                uint8_t out = write_sequence((int)round(ball.x), 0) | write_sequence((int)round(ball.y), 3);
+                                                                  ^~~~~~~~~~~~~
+./ping_pong_game.h(166): warning: cast from function call of type 'double' to non-matching type 'int' [-Wbad-function-cast]
+                                uint8_t out = write_sequence((int)round(ball.x), 0) | write_sequence((int)round(ball.y), 3);
+                                                                                                          ^~~~~~~~~~~~~
+./ping_pong_game.h(166): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                uint8_t out = write_sequence((int)round(ball.x), 0) | write_sequence((int)round(ball.y), 3);
+                                                                                      ~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+./ping_pong_game.h(166): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                                uint8_t out = write_sequence((int)round(ball.x), 0) | write_sequence((int)round(ball.y), 3);
+                                                                                                          ~~~~~ ~~~~~^
+./ping_pong_game.h(166): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                                uint8_t out = write_sequence((int)round(ball.x), 0) | write_sequence((int)round(ball.y), 3);
+                                              ~~~~~~~~~~~~~~ ^~~~~~~~~~~~~~~~~~
+./ping_pong_game.h(166): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                                uint8_t out = write_sequence((int)round(ball.x), 0) | write_sequence((int)round(ball.y), 3);
+                                                                  ~~~~~ ~~~~~^
+./ping_pong_game.h(187): warning: cast from function call of type 'uint8_t' (aka 'unsigned char') to non-matching type 'float' [-Wbad-function-cast]
+                                ball.x = (float)load_sequence(transfer.dataR, 0);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./ping_pong_game.h(188): warning: cast from function call of type 'uint8_t' (aka 'unsigned char') to non-matching type 'float' [-Wbad-function-cast]
+                                ball.y = (float)load_sequence(transfer.dataR, 3);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./ping_pong_game.h(210): warning: cast from function call of type 'double' to non-matching type 'int' [-Wbad-function-cast]
+                draw_dot((int)round(ball.x), (int)round(ball.y));
+                              ^~~~~~~~~~~~~
+./ping_pong_game.h(210): warning: cast from function call of type 'double' to non-matching type 'int' [-Wbad-function-cast]
+                draw_dot((int)round(ball.x), (int)round(ball.y));
+                                                  ^~~~~~~~~~~~~
+./ping_pong_game.h(210): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                draw_dot((int)round(ball.x), (int)round(ball.y));
+                                                  ~~~~~ ~~~~~^
+./ping_pong_game.h(210): warning: implicit conversion increases floating-point precision: 'volatile float' to 'double' [-Wdouble-promotion]
+                draw_dot((int)round(ball.x), (int)round(ball.y));
+                              ~~~~~ ~~~~~^
+19 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=8076 RO-data=240 RW-data=12 ZI-data=2016  
+".\Objects\game.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Source file:   Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c
+      Source file:   Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\arm\startup_stm32f072xb.s
+      Source file:   MDK\Device\Source\ARM\STM32F0xx_OPT.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

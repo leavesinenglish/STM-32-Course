@@ -1,0 +1,37 @@
+Dependencies for Project 'game', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\main.c)(0x61CBFD8E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Packages/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Packages/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F072xB -D_RTE_-o ./objects/main.o -MD)
+I (C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h)(0x5D7F76EA)
+I (C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f072xb.h)(0x5D7F76EA)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3F6F2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603515E0)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D3F6F2)
+I (C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h)(0x5D7F76EA)
+I (usart_connection.h)(0x61CBFD8F)
+I (ping_pong_game.h)(0x61CBFD8F)
+I (buttons.h)(0x61CBD44C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603515DA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x603515E0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x603515DA)
+I (usart.h)(0x61CBFB0F)
+I (SPI.h)(0x61CBCBF7)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603515E0)
+I (usart_timer.h)(0x61CB9EB7)
+F (.\buttons.h)(0x61CBD44C)()
+F (.\ping_pong_game.h)(0x61CBFD8F)()
+F (.\usart.h)(0x61CBFB0F)()
+F (.\usart_connection.h)(0x61CBFD8F)()
+F (.\SPI.h)(0x61CBCBF7)()
+F (.\usart_timer.h)(0x61CB9EB7)()
+F (RTE\Device\STM32F072RBTx\startup_stm32f072xb.s)(0x5D7F76EA)(--target=arm-arm-none-eabi -mcpu=cortex-m0 -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Packages/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Packages/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F072xB SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f072xb.o)
+F (RTE\Device\STM32F072RBTx\system_stm32f0xx.c)(0x5D7F76EA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Packages/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Packages/Keil/STM32F0xx_DFP/2.1.0/Drivers/CMSIS/Device/ST/STM32F0xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F072xB -D_RTE_-o ./objects/system_stm32f0xx.o -MD)
+I (C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h)(0x5D7F76EA)
+I (C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f072xb.h)(0x5D7F76EA)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3F6F2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603515E0)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3F6F2)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3F6F2)
+I (C:\Packages\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h)(0x60D3F6F2)
+I (C:\Packages\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h)(0x5D7F76EA)
